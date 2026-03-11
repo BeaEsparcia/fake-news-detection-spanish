@@ -2,7 +2,7 @@
 
 This project explores whether simple natural language processing techniques can detect patterns associated with misinformation in Spanish news articles.
 
-Using the *Spanish Fake News Corpus, we train and evaluate classical machine learning models based on **TF-IDF features* to classify news as true or fake.
+Using the *Spanish Fake News Corpus*, we train and evaluate classical machine learning models based on **TF-IDF features** to classify news as true or fake.
 
 The goal is not to determine factual truth, but to analyze whether linguistic and stylistic patterns associated with misinformation can be captured by simple models.
 
@@ -19,10 +19,10 @@ Topics covered include:
 •⁠  ⁠Politics  
 •⁠  ⁠Society  
 •⁠  ⁠Science  
-•⁠  ⁠Covid-19
-•⁠  ⁠Environment 
-•⁠  ⁠International
-•⁠  ⁠Sport
+•⁠  ⁠Covid-19    
+•⁠  ⁠Environment    
+•⁠  ⁠International    
+•⁠  ⁠Sport   
 
 Dataset access:
 
