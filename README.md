@@ -32,48 +32,48 @@ https://huggingface.co/datasets/sayalaruano/FakeNewsCorpusSpanish
 
 ## Methodology
 
-The pipeline follows a classical NLP approach:
+The pipeline follows a classical NLP approach: 
 
-1.⁠ ⁠Combine headline and article text
-2.⁠ ⁠Convert text to numerical representations using *TF-IDF*
-3.⁠ ⁠Train machine learning classifiers
+1.⁠ ⁠Combine headline and article text  
+2.⁠ ⁠Convert text to numerical representations using *TF-IDF*  
+3.⁠ ⁠Train machine learning classifiers  
 
 Two models were evaluated:
 
-•⁠  ⁠*Logistic Regression* (baseline)
-•⁠  ⁠*Linear Support Vector Machine (SVM)*
+•⁠  ⁠*Logistic Regression* (baseline)  
+•⁠  ⁠*Linear Support Vector Machine (SVM)*   
 
 ---
 
 ## Results
 
-The baseline model achieved approximately:
+The baseline model achieved approximately:  
 
 •⁠  ⁠*Accuracy:* ~70%
 
-Results were similar across both models, suggesting that performance is primarily constrained by the dataset size and vocabulary distribution rather than the specific algorithm.
+Results were similar across both models, suggesting that performance is primarily constrained by the dataset size and vocabulary distribution rather than the specific algorithm.  
 
 ---
 
-## Model Interpretation
+## Model Interpretation    
 
 Because linear models are interpretable, we examined the most influential terms associated with each class.
 
 The analysis suggests that the classifier relies primarily on *stylistic and contextual cues*, rather than factual verification.
 
-For example:
+For example:  
 
-•⁠  ⁠institutional or journalistic language tends to appear more often in true news
-•⁠  ⁠conversational or emotional language appears more frequently in fake news predictions
+•⁠  ⁠institutional or journalistic language tends to appear more often in true news  
+•⁠  ⁠conversational or emotional language appears more frequently in fake news predictions  
 
 ---
 
 ## Error Analysis
 
-Examples of misclassified headlines show that:
+Examples of misclassified headlines show that: 
 
-•⁠  ⁠well-written fake news can resemble legitimate journalism
-•⁠  ⁠sensational but factual news may be classified as fake
+•⁠  ⁠well-written fake news can resemble legitimate journalism  
+•⁠  ⁠sensational but factual news may be classified as fake  
 
 This highlights the limitations of purely text-based approaches.
 
@@ -81,13 +81,24 @@ This highlights the limitations of purely text-based approaches.
 
 ## Limitations
 
-Several limitations should be considered:
+Several limitations should be considered:   
 
-•⁠  ⁠the dataset is relatively small
-•⁠  ⁠the model relies on vocabulary patterns specific to the dataset
-•⁠  ⁠misinformation detection cannot rely solely on textual features
+•⁠  ⁠the dataset is relatively small     
+•⁠  ⁠the model relies on vocabulary patterns specific to the dataset    
+•⁠  ⁠misinformation detection cannot rely solely on textual features    
 
 Automated systems should therefore be considered *tools to assist human fact-checkers*, rather than systems capable of determining truth.
+
+---
+
+## Installation
+
+Clone the repository and install the required dependencies:
+
+ ⁠bash  
+git clone https://github.com/BeaEsparcia/fake-news-detection-spanish.git  
+cd fake-news-detection-spanish  
+pip install -r requirements.txt  
 
 ---
 
